@@ -1,0 +1,44 @@
+{
+  "name": "kadokweb/minify",
+  "type": "library",
+  "description": "CSS & JavaScript minifier, in PHP. Removes whitespace, strips comments, combines files (incl. @import statements and small assets in CSS files), and optimizes/shortens a few common programming patterns.",
+  "keywords": [
+    "minify",
+    "minifier",
+    "css",
+    "js",
+    "javascript"
+  ],
+  "homepage": "http://www.kadok.com.br",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Doka Silva",
+      "homepage": "http://www.kadok.com.br",
+      "email": "doka@kadok.com.br",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "ext-pcre": "*",
+    "kadokweb/path-converter": "~1.0"
+  },
+  "require-dev": {
+    "matthiasmullie/scrapbook": "dev-master",
+    "phpunit/phpunit": ">=4.8",
+    "friendsofphp/php-cs-fixer": "~2.0"
+  },
+  "suggest": {
+    "psr/cache-implementation": "Cache implementation to use with Minify::cache"
+  },
+  "autoload": {
+    "psr-4": {
+      "KadokWeb\\Minify\\": "src/"
+    }
+  },
+  "bin": [
+    "bin/minifycss",
+    "bin/minifyjs"
+  ]
+}
