@@ -25,7 +25,7 @@
     "kadokweb/path-converter": "~1.0"
   },
   "require-dev": {
-    "matthiasmullie/scrapbook": "dev-master",
+    "KadokWeb/scrapbook": "1.0.0",
     "phpunit/phpunit": ">=4.8",
     "friendsofphp/php-cs-fixer": "~2.0"
   },
